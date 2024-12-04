@@ -7,13 +7,21 @@ class island
   public $color;
   public $image;
 
-  public function __construct($name, $shortDesc, $longDesc, $color, $image)
+  // public $islandID;
+  // public $contentimg;
+  // public $content;
+
+  // $islandID , $contentimg, $content
+  public function __construct($name, $shortDesc, $longDesc, $color, $image )
   {
     $this->name = $name;
     $this->shortDesc = $shortDesc;
     $this->longDesc = $longDesc;
     $this->color = $color;
     $this->image = $image;
+    // $this->islandID = $islandID;
+    // $this->contentimg = $contentimg;
+    // $this->content = $content;
 
   }
 
