@@ -58,6 +58,9 @@ body {
         margin: 5px 0;
     }
 }
+
+
+
 h2,
 h3 {
     color: #ADE8F4;
@@ -154,4 +157,5 @@ h3 {
 
 .content-title{
     text-align: center;
+    margin-top: 50px;
 }

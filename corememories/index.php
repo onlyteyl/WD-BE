@@ -79,49 +79,7 @@ $islandinfoResult = executeQuery($islandinfoQuery);
                 </div>
             </div>
 
-            <!-- The Contact Section -->
-
-            
-            <div class="container-fluid message-bg " id="contact">
-                <h2 class="w3-wide w3-center">MESSAGE ME</h2>
-                <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-                <form>
-                    <div class="container">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button class="w3-button">SEND</button>
-                    </div>
-                </form>
-
-
-            </div>
-        </div>
-
-        <!-- End Page Content -->
-    </div>
-
-    <!-- Image of location/map -->
-    <img src="bannerImg/BottomB.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge footer">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-        </p>
-    </footer>
-
+            <?php include("sharedfiles/footer.php") ?>
     <script>
         // Automatic Slideshow - change image every 4 seconds
         let myIndex = 0;
