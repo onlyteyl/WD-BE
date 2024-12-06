@@ -6,22 +6,20 @@ $cards = array();
 
 $islandQuery = "SELECT * FROM islandsofpersonality";
 $islandResult = executeQuery($islandQuery);
+$islandCount = mysqli_num_rows($islandResult);
 
 while ($islandRow = mysqli_fetch_assoc($islandResult)) {
     $c = new island(
+        $islandRow['islandOfPersonalityID'],
         $islandRow['name'],
         $islandRow['shortDescription'],
         $islandRow['longDescription'],
         $islandRow['color'],
         $islandRow['image']
-
     );
 
     array_push($cards, $c);
 }
-
-$islandinfoQuery = "SELECT * FROM islandsofpersonality";
-$islandinfoResult = executeQuery($islandinfoQuery);
 
 ?>
 
@@ -41,12 +39,12 @@ $islandinfoResult = executeQuery($islandinfoQuery);
     <div class="w3-content" style="max-width:2000px;">
         <?php ?>
         <!-- Automatic Slideshow Images -->
-        <?php while ($post = mysqli_fetch_assoc($islandinfoResult)) { ?>
+        <?php foreach ($cards as $card) { ?>
             <div class="mySlides w3-display-container w3-center">
-                <img src="bannerImg/<?php echo $post["image"] ?>" style="width:100%">
+                <img src="bannerImg/<?php echo $card->image ?>" style="width:100%">
                 <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small banner-text-bg">
-                    <h3><?php echo $post["name"] ?></h3>
-                    <p><b><?php echo $post["shortDescription"] ?></b></p>
+                    <h3> <?php echo $card->name ?> </h3>
+                    <p><b><?php echo $card->shortDesc ?></b></p>
                 </div>
             </div>
         <?php } ?>
@@ -67,7 +65,7 @@ $islandinfoResult = executeQuery($islandinfoQuery);
         <div class="w3-black" id="tour">
             <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
                 <h2 class="w3-wide w3-center">PERSONALITY ISLAND</h2>
-                <p class="w3-opacity w3-center"><i>4 of my personality island</i></p><br>
+                <p class="w3-opacity w3-center"><i><?php echo $islandCount?> of my personality island</i></p><br>
 
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
 

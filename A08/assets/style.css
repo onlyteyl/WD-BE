@@ -58,9 +58,6 @@ body {
         margin: 5px 0;
     }
 }
-
-
-
 h2,
 h3 {
     color: #ADE8F4;
@@ -154,8 +151,45 @@ h3 {
     color: white !important;
 }
 
-
-.content-title{
+.content-title {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-featured-container {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .img-featured-container img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-body {
+    opacity: 0.9;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.island-description{
+
 }

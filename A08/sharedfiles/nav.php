@@ -11,7 +11,6 @@
                 <li class="nav-item"><a class="nav-link" href="index.php#band">Info</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#tour">Island</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#contact">Message Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="view.php">view hehe</a></li>
             </ul>
         </div>
     </div>
