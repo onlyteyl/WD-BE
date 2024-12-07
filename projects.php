@@ -75,7 +75,7 @@
   </div>
 
 
-  <!-- IPHONE -->
+  <!-- INSIDE TEYL -->
   <div class="container about-container">
     <div class="row py-3">
       <div class="col-12 col-md-6 px-0">
